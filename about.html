@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Chotu Gupta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+</head>
+<body class="bg-green-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-green-700 text-white p-4 flex justify-between items-center sticky top-0 shadow z-50">
+    <div class="flex items-center space-x-2">
+      <img src="C:\Users\Sugrim gupta\OneDrive\图片\Saved Pictures\Swastik.png" alt="Swastik Logo" class="w-10 h-10 rounded-full shadow bg-white p-1">
+      <h1 class="text-2xl font-bold">Chotu Gupta</h1>
+    </div>
+    <nav class="space-x-4">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="index.html#products" class="hover:underline">Products</a>
+      <a href="index.html#order" class="hover:underline">Order</a>
+      <a href="index.html#contact" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="p-8 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">About Us</h2>
+    <p class="text-lg mb-4">
+      Welcome to <span class="font-semibold">Chotu Gupta</span> — your trusted wholesaler and retailer of fresh vegetables and fruits in Bhayandar.
+    </p>
+    <p class="mb-4">
+      We deliver fresh, organic, and hygienic produce directly from farmers to your home. Our mission is to make healthy eating affordable and accessible.
+    </p>
+    <p class="mb-6">
+      Whether you need daily vegetables, fruits for your family, or bulk party orders — we guarantee quality, timely delivery, and fair pricing.
+    </p>
+
+    <!-- Mission Cards -->
+    <div class="grid md:grid-cols-3 gap-6 mt-8">
+      <div class="bg-white p-6 rounded shadow reveal">
+        <h3 class="font-semibold text-xl mb-2">🥦 Freshness</h3>
+        <p>We source vegetables and fruits daily for maximum freshness.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow reveal">
+        <h3 class="font-semibold text-xl mb-2">🚚 Fast Delivery</h3>
+        <p>Quick and reliable doorstep delivery across Bhayandar.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow reveal">
+        <h3 class="font-semibold text-xl mb-2">💚 Customer Trust</h3>
+        <p>Loved by customers for quality, service, and fair pricing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center p-4 mt-6">
+    &copy; 2025 Chotu Gupta | All rights reserved.
+  </footer>
+
+  <script>
+    // ✨ ScrollReveal animations
+    ScrollReveal().reveal('.reveal', { distance: '40px', duration: 700, origin: 'bottom', interval: 200 });
+    ScrollReveal().reveal('p', { distance: '20px', duration: 600, origin: 'top', interval: 150 });
+  </script>
+</body>
+</html>
