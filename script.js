@@ -82,3 +82,21 @@ function saveReview(review) {
   reviews.push(review);
   localStorage.setItem("reviews", JSON.stringify(reviews));
 }
+// Modal open after 2 seconds
+window.onload = function() {
+  setTimeout(() => {
+    document.getElementById("offerModal").style.display = "flex";
+  }, 2000);
+}
+
+// Close button
+document.getElementById("closeModal").onclick = function() {
+  document.getElementById("offerModal").style.display = "none";
+}
+
+// Click outside modal to close
+window.onclick = function(e) {
+  if (e.target == document.getElementById("offerModal")) {
+    document.getElementById("offerModal").style.display = "none";
+  }
+}
