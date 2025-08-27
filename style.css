@@ -9,6 +9,16 @@
   z-index: 9999;
 }
 
+  /* make specific elements uppercase */
+  .brand-name,
+  header .site-title,
+  .logo-text {
+    text-transform: uppercase;
+    letter-spacing: .04em; /* optional: nicer caps */
+    font-weight: 700;
+  }
+
+
 /* Modal Box */
 .modal-content {
   background: #fff;
@@ -53,9 +63,15 @@
   font-size: 18px;
   color: #333;
 }
-
-/* Animation */
-@keyframes popupFade {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+.star {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
+.star:hover {
+  transform: scale(1.2);
+}
+.star.selected {
+  color: gold;
+}
+
